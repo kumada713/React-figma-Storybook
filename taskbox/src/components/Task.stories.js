@@ -7,6 +7,14 @@ import Task from './Task';
 export default {
   component: Task,
   title: 'Task',
+  parameters: {
+    //👇 Story's parameter defined here
+    assets: [
+      'path/to/your/asset.png',
+      'path/to/another/asset.png',
+      'path/to/yet/another/asset.png',
+    ],
+  },
 };
 
 const Template = args => <Task {...args} />;
